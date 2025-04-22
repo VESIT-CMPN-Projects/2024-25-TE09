@@ -1,0 +1,128 @@
+/* General container styling */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 20px;
+  font-family: Inter, sans-serif;
+}
+
+/* Input fields container */
+.input-fields {
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Individual input styling */
+.input-fields input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Input focus styling */
+.input-fields input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Login button styling */
+.login-button {
+  width: 100%;
+  max-width: 350px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.login-button:active {
+  background-color: #003f7f;
+}
+
+/* Separator styling */
+.separator {
+  margin: 15px 0;
+  font-size: 1rem;
+  color: rgb(10, 133, 255);
+  text-align: center;
+}
+
+/* Third-party login buttons container */
+.third-party-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Google button styling */
+.google-login {
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #db4437; /* Google red */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.google-login:hover {
+  background-color: #c23321;
+}
+
+/* GitHub button styling */
+.github-login {
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333; /* GitHub black */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.github-login:hover {
+  background-color: #24292e;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  .input-fields input,
+  .login-button,
+  .google-login,
+  .github-login {
+    font-size: 0.9rem;
+  }
+
+  .separator {
+    font-size: 0.9rem;
+  }
+}
